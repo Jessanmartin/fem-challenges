@@ -1,0 +1,113 @@
+/* Vaariables */
+:root {
+    --font: 'Red Hat Display', sans-serif;;
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veypaleBlue: hsl(225, 100%, 98%);
+    --desBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --white: #fff;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 16px a 1 rem */
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--desBlue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 0 top;
+    background-size: contain;
+    background-color: var(--paleBlue);
+}
+@media (min-width: 480px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+p {
+    font-size: 1.5rem;
+}
+a {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+button {
+    display: block;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    border: none;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--brightBlue);
+    border-radius: 10px;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 13px 10px 5px rgba(230,231,237,1);
+    -moz-box-shadow: 0px 13px 10px 5px rgba(230,231,237,1);
+    box-shadow: 0px 13px 10px 5px rgba(230,231,237,1);
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(56, 41, 224,0.8);
+    transition: ease 1s all;
+}
+.hero {
+    background-image: url(../images/illustration-hero.svg);
+    height: 17rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px 12px 0 0;
+}
+.container {
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 12px;
+    margin: 3rem auto;
+    max-width: 34rem;;
+}
+.order-summary {
+    padding: 1rem 2rem 5rem 2rem;
+}
+a.order-link {
+    text-decoration: none;
+    color: var(--desBlue);
+    font-weight: 900;
+}
+a:hover.order-link {
+    color: var(--darkBlue);
+    transition: ease 1s color;
+}
+.plan-info {
+    display: grid;
+    grid-template-columns: 1FR 2FR 1FR;
+    align-items: center;
+    background-color: var(--veypaleBlue);
+    border-radius: 12px;
+}
+a.info-link {
+    color: var(--brightBlue);
+    text-decoration: underline;
+}
+a:hover.info-link  {
+    text-decoration: none;
+}
+.plan-details p {
+    text-align: left;
+    line-height: 1;
+    font-size: 1.3rem;
+}
+.plan-type {
+    font-weight: 700;
+    color: var(--darkBlue)
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
